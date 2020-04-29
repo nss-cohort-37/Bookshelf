@@ -15,12 +15,12 @@ using Microsoft.EntityFrameworkCore;
 namespace Bookshelf37.Controllers
 {
     [Authorize]
-    public class BookController : Controller
+    public class BooksController : Controller
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public BookController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public BooksController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
